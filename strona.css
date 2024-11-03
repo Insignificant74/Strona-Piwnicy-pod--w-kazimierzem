@@ -52,6 +52,12 @@ body {
 
 #mainButton {
   width: 250px;
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+
+.dropdown {
+    display: none;
 }
 
 #Topbar > .Internal {
@@ -60,14 +66,23 @@ body {
 }
 
 #Topbar .button {
-  display: flex;
-  flex-wrap: nowrap !important;
   margin: 10px;
 }
+
+#Topbar .button .button{
+    font-size: 24px;
+  }
 
 #Topbar .button > img {
   object-fit: cover;
   margin: 4px;
   margin-right: 8px;
   height: 36px;
+}
+
+#MainContainer img {
+  object-fit: cover;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
