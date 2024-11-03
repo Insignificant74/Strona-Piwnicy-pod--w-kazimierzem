@@ -18,6 +18,12 @@
 
 body {
   font-family: "Logo";
+  padding: 0;
+  margin: 0;
+}
+
+.button{
+    cursor: 
 }
 
 #Topbar {
@@ -28,7 +34,7 @@ body {
   font-size: 22px;
   padding: 2px 0;
   height: auto;
-  position: fixed;
+  position: relative;
   left: 0;
   top: 0;
   width: 100%;
@@ -36,7 +42,7 @@ body {
   margin: 0;
 }
 
-#rightMenus {
+#rightButtons {
   margin-left: auto;
   display: flex;
   flex-wrap: nowrap !important;
@@ -44,7 +50,7 @@ body {
   font-size: 40px;
 }
 
-#mainMenu {
+#mainButton {
   width: 250px;
 }
 
@@ -62,5 +68,6 @@ body {
 #Topbar .button > img {
   object-fit: cover;
   margin: 4px;
+  margin-right: 8px;
   height: 36px;
 }
