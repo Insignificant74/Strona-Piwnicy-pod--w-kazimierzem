@@ -1,0 +1,66 @@
+::-moz-selection {
+  background-color: transparent;
+}
+
+::selection {
+  background-color: transparent;
+}
+
+@font-face {
+  font-family: "Title";
+  src: url("Barlow-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Logo";
+  src: url("tincush-0987.otf");
+}
+
+body {
+  font-family: "Logo";
+}
+
+#Topbar {
+  background-color: #7b1b20;
+  vertical-align: middle;
+  color: #eedfdf;
+  text-shadow: none;
+  font-size: 22px;
+  padding: 2px 0;
+  height: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 4px;
+  margin: 0;
+}
+
+#rightMenus {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: nowrap !important;
+  margin-right: 20px;
+  font-size: 40px;
+}
+
+#mainMenu {
+  width: 250px;
+}
+
+#Topbar > .Internal {
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+
+#Topbar .button {
+  display: flex;
+  flex-wrap: nowrap !important;
+  margin: 10px;
+}
+
+#Topbar .button > img {
+  object-fit: cover;
+  margin: 4px;
+  height: 36px;
+}
