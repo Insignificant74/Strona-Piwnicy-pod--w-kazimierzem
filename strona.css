@@ -16,14 +16,18 @@
   src: url("tincush-0987.otf");
 }
 
+hr {
+  margin: 4px;
+}
+
 body {
   font-family: "Logo";
   padding: 0;
   margin: 0;
 }
 
-.button{
-    cursor: pointer
+.button {
+  cursor: pointer;
 }
 
 #Topbar {
@@ -31,7 +35,6 @@ body {
   vertical-align: middle;
   color: #eedfdf;
   text-shadow: none;
-  font-size: 22px;
   padding: 2px 0;
   height: auto;
   position: relative;
@@ -42,22 +45,34 @@ body {
   margin: 0;
 }
 
-#rightButtons {
+#rightButtons,
+#hamburger {
   margin-left: auto;
   display: flex;
   flex-wrap: nowrap !important;
   margin-right: 20px;
+}
+
+#rightButtons {
   font-size: 40px;
 }
 
-#mainButton {
+#hamburger {
+  display: none;
+}
+
+#mainButton > .Internal {
   width: 250px;
   display: flex;
   flex-wrap: nowrap !important;
+  font-size: 22px;
 }
 
 .dropdown {
-    display: none;
+  background-color: #7b1b20;
+  display: none;
+  position: absolute;
+  padding: 16px;
 }
 
 #Topbar > .Internal {
@@ -65,18 +80,17 @@ body {
   flex-wrap: nowrap !important;
 }
 
-#Topbar .button {
-  margin: 10px;
+#Topbar .button > .Internal {
+  margin: 16px;
 }
 
-#Topbar .button .button{
-    font-size: 24px;
-  }
+#Topbar .button .button {
+  font-size: 24px;
+}
 
-#Topbar .button > img {
+#Topbar img {
   object-fit: cover;
   margin: 4px;
-  margin-right: 8px;
   height: 36px;
 }
 
@@ -85,4 +99,14 @@ body {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+@media (max-width: 500px) {
+  #hamburger {
+    display: block;
+  }
+
+  #rightButtons {
+    display: none;
+  }
 }
