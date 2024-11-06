@@ -34,8 +34,39 @@ body {
   width: 65%;
 }
 
+div.button:hover {
+  color: red;
+}
+
+#Topbar div.button:hover{
+  color: white;
+}
+
+#MainContainer > div.button {
+  border-radius: 5px;
+  background-color: #7b1b20;
+  color: #eedfdf;
+  margin-top: 10px;
+  width: 160px;
+}
+
+#MainContainer > div.button > .Internal {
+  display: flex;
+  align-items: center;
+}
+
+#MainContainer > div.button img {
+  height: 33px;
+  width: auto;
+  margin: 10px;
+}
+
+#MainContainer > div.button:hover {
+  color: white;
+}
+
 .button {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 #Topbar {

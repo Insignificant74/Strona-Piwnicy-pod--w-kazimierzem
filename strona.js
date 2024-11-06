@@ -1,9 +1,7 @@
 window.onload = function () {
   const mainButton = document.getElementById("mainButton");
   const foodButton = document.getElementById("foodButton");
-  const foodDropdown = foodButton.querySelector(".dropdown");
-  const foodMenu = document.getElementById("foodMenu");
-  const wineMenu = document.getElementById("wineMenu");
+  const wineButton = document.getElementById("wineButton");
   const contactButton = document.getElementById("contactButton");
   const Personal = document.getElementById("Personal");
   const Instagram = document.getElementById("Instagram");
@@ -13,28 +11,14 @@ window.onload = function () {
   const TKP = document.getElementById("TKP");
   const PSK = document.getElementById("PSK");
 
-console.log(foodDropdown);
-
   mainButton.addEventListener("click", function () {
     window.location.href=("StronaGlowna.html");
-  });
-  foodButton.addEventListener("mouseover", function () {
-    foodDropdown.style.display="block";
-  });
-  foodButton.addEventListener("mouseout", function () {
-    foodDropdown.style.display="none";
   });
   foodButton.addEventListener("click", function () {
     window.location.href=("StronaMenu.html");
   });
-  foodMenu.addEventListener("click", function () {
-    window.location.href=("StronaMenu.html");
-  });
-  contactButton.addEventListener("mouseover", function () {
-    contactDropdown.style.display="block";
-  });
-  contactButton.addEventListener("mouseout", function () {
-    contactDropdown.style.display="none";
+  wineButton.addEventListener("click", function () {
+    window.location.href=("StronaWin.html");
   });
   contactButton.addEventListener("click", function () {
     window.location.href=("StronaKontakt.html");
