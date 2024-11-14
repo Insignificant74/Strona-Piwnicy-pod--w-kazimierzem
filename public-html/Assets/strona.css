@@ -20,6 +20,10 @@ hr {
   margin: 4px;
 }
 
+.box {
+display: flex;
+}
+
 body {
   font-family: "Main";
   padding: 0;
@@ -27,6 +31,10 @@ body {
   color: #7b1b20;
   font-size: 20px;
   text-align: center;
+}
+
+#MainContainer div {
+  text-align: left;
 }
 
 #MainContainer {
@@ -54,6 +62,26 @@ a.bareLink:active {
   text-decoration: none;
 }
 
+a:link {
+  color: inherit;
+  vertical-align: middle;
+}
+
+a:visited {
+  color: inherit;
+  vertical-align: middle;
+}
+
+a:hover {
+  color: inherit;
+  vertical-align: middle;
+}
+
+a:active {
+  color: inherit;
+  vertical-align: middle;
+}
+
 #Topbar div.button:hover {
   color: white;
 }
@@ -72,10 +100,15 @@ a.bareLink:active {
   align-items: center;
 }
 
-#MainContainer div.button img {
-  height: 33px;
-  width: auto;
+img.ikona {
+  height: 22px;
+  width: auto !important;
   margin: 10px;
+}
+
+a {
+  display:flex;
+  align-items: center;
 }
 
 #MainContainer div.button:hover {
@@ -158,6 +191,10 @@ a.bareLink:active {
 
 #MainContainer img {
   object-fit: cover;
+  width: 100%;
+}
+
+#MainContainer > img {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
