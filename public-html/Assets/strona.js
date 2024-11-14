@@ -4,13 +4,13 @@ window.onload = function () {
   const contactButton = document.getElementById("contactButton");
 
   mainButton.addEventListener("click", function () {
-    window.location.href=("index.html");
+    window.location.href=("..\\");
   });
   foodButton.addEventListener("click", function () {
-    window.location.href=("StronaMenu.html");
+    window.location.href=("..\\Menu");
   });
   contactButton.addEventListener("click", function () {
-    window.location.href=("StronaKontakt.html");
+    window.location.href=("..\\Kontakt");
   });
   /*
   Instagram.addEventListener("click", function () {
