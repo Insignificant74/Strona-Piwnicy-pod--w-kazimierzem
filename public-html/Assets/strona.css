@@ -131,7 +131,7 @@ a {
   position: relative;
   left: 0;
   top: 0;
-  width: 100%;
+  width: auto;
   padding: 4px;
   margin: 0;
 }
