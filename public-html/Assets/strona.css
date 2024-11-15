@@ -153,6 +153,7 @@ a {
 }
 
 #mainButton > .Internal {
+  align-items: center;
   width: 250px;
   display: flex;
   flex-wrap: nowrap !important;
@@ -185,12 +186,12 @@ a {
 
 #Topbar img {
   object-fit: cover;
-  margin: 4px;
+  margin-right: 10px;
   height: 36px;
 }
 
 #MainContainer img {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
 }
 
@@ -202,7 +203,7 @@ a {
 
 @media (max-width: 900px) {
   #MainContainer {
-    width: 100%;
+    width: 90%;
   }
 }
 
