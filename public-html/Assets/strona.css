@@ -123,8 +123,8 @@ a:active {
 }
 
 img.ikona {
-  height: 22px;
-  width: auto !important;
+  height: 22px !important;
+  width: auto;
   margin: 10px;
 }
 
@@ -214,7 +214,7 @@ a {
 
 #MainContainer img {
   object-fit: contain;
-  width: 50%;
+  height: 300px;
 }
 
 #MainContainer > img {
@@ -227,6 +227,10 @@ a {
   #MainContainer {
     width: 90%;
   }
+
+  #MainContainer img {
+    height: 200px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -236,5 +240,14 @@ a {
 
   #rightButtons {
     display: none;
+  }
+
+  .box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box img {
+    order: -1;
   }
 }
