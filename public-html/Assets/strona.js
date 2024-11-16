@@ -4,6 +4,8 @@ window.onload = function () {
   const mainButton = document.getElementById("mainButton");
   const foodButton = document.getElementById("foodButton");
   const contactButton = document.getElementById("contactButton");
+  const rightButtons = document.getElementById("rightButtons");
+  const hamburger = document.getElementById("hamburger");
 
   mainButton.addEventListener("click", function () {
     window.location.href = "..\\";
@@ -13,6 +15,17 @@ window.onload = function () {
   });
   contactButton.addEventListener("click", function () {
     window.location.href = "..\\Kontakt";
+  });
+  hamburger.addEventListener("click", function () {
+    if (rightButtons.style.display != "flex"){
+      rightButtons.style.display = "flex";
+    }
+    else{
+      rightButtons.style.display = "none";
+    }
+  });
+  document.getElementById("MainContainer").addEventListener("click", function () {
+    rightButtons.style.display = "none";
   });
 };
 

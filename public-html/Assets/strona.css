@@ -240,6 +240,12 @@ a {
 
   #rightButtons {
     display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: #7b1b20;
+    right: 0;
+    margin: 0;
+    top: 86px;
   }
 
   .box {
