@@ -21,7 +21,29 @@ hr {
 }
 
 .box {
-display: flex;
+  display: flex;
+}
+
+.gallery {
+  display: flex;
+  align-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+}
+
+.gallery .buttonRight {
+  margin-left: auto;
+  width: 5% !important;
+  cursor: pointer;
+}
+
+.gallery .buttonLeft {
+  margin-right: auto;
+  width: 5% !important;
+  cursor: pointer;
+  display: none;
 }
 
 body {
@@ -107,7 +129,7 @@ img.ikona {
 }
 
 a {
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
@@ -192,7 +214,7 @@ a {
 
 #MainContainer img {
   object-fit: contain;
-  width: 100%;
+  width: 50%;
 }
 
 #MainContainer > img {

@@ -1,15 +1,56 @@
+var loadedImages = [];
+
 window.onload = function () {
   const mainButton = document.getElementById("mainButton");
   const foodButton = document.getElementById("foodButton");
   const contactButton = document.getElementById("contactButton");
 
   mainButton.addEventListener("click", function () {
-    window.location.href=("..\\");
+    window.location.href = "..\\";
   });
   foodButton.addEventListener("click", function () {
-    window.location.href=("..\\Menu");
+    window.location.href = "..\\Menu";
   });
   contactButton.addEventListener("click", function () {
-    window.location.href=("..\\Kontakt");
+    window.location.href = "..\\Kontakt";
   });
 };
+
+function setupGallery(gallery, images, comments) {
+  var currentImage = 0;
+  gallery.style.backgroundImage = "url(" + images[0] + ")";
+  gallery.nextSibling.textContent = comments[0];
+  const rightButton = gallery.querySelector(".buttonRight");
+  const leftButton = gallery.querySelector(".buttonLeft");
+  rightButton.addEventListener("click", function () {
+    if (currentImage < images.length - 1) {
+      currentImage++;
+      gallery.style.backgroundImage = "url(" + images[currentImage] + ")";
+      gallery.nextSibling.textContent = comments[currentImage];
+      leftButton.style.display = "block";
+      if (currentImage == images.length - 1) {
+        rightButton.style.display = "none";
+      }
+    }
+  });
+
+  leftButton.addEventListener("click", function () {
+    if (currentImage != 0) {
+      currentImage--;
+      gallery.style.backgroundImage = "url(" + images[currentImage] + ")";
+      gallery.nextSibling.textContent = comments[currentImage];
+      rightButton.style.display = "block";
+      if (currentImage == 0) {
+        leftButton.style.display = "none";
+      }
+    }
+  });
+}
+
+function preloadImages(images) {
+  images.forEach((url) => {
+    var img = new Image();
+    img.src = url;
+    loadedImages.push(img);
+  });
+}
