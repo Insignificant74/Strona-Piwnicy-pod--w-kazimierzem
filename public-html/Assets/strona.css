@@ -31,6 +31,7 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   height: 60vh;
+  margin-bottom: 10px;
 }
 
 .gallery .buttonRight {
@@ -53,6 +54,11 @@ body {
   color: #7b1b20;
   font-size: 20px;
   text-align: center;
+  background-color: #eedfdf;
+}
+
+body img {
+  width: 100%;
 }
 
 #MainContainer div {
@@ -61,6 +67,7 @@ body {
 
 #MainContainer {
   margin: auto;
+  margin-bottom: 10px;
   width: 65%;
 }
 
@@ -210,17 +217,22 @@ a {
   object-fit: cover;
   margin-right: 10px;
   height: 36px;
+  width: auto;
 }
 
 #MainContainer img {
-  object-fit: contain;
   height: 350px;
+  object-fit: contain;
 }
 
+#MainContainer > div {
+  text-align: center;
+}
+
+
 #MainContainer > img {
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 100%;
+  height: auto !important;
 }
 
 @media (max-width: 900px) {
@@ -233,7 +245,7 @@ a {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #hamburger {
     display: block;
   }
