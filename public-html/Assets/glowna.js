@@ -75,10 +75,10 @@ window.addEventListener("load", function () {
   setupGallery(galleryBar, imagesBar, commentBar);
   setupGallery(galleryKuchnia, imagesKuchnia, commentKuchnia);
   setupGallery(galleryPomieszczenia, imagesPomieszczenia, commentPomieszczenia);
-  setupGallery(galleryOferty, imagesOferty, commentOferty);
+  //setupGallery(galleryOferty, imagesOferty, commentOferty);
 
   preloadImages(imagesBar);
   preloadImages(imagesKuchnia);
   preloadImages(imagesPomieszczenia);
-  preloadImages(imagesOferty);
+  //preloadImages(imagesOferty);
 });
