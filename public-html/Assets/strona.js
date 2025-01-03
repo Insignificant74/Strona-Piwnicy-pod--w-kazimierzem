@@ -17,17 +17,25 @@ window.onload = function () {
     window.location.href = "..\\Kontakt";
   });
   hamburger.addEventListener("click", function () {
-    if (rightButtons.style.display != "flex"){
+    if (rightButtons.style.display != "flex") {
       rightButtons.style.display = "flex";
-    }
-    else{
+    } else {
       rightButtons.style.display = "none";
     }
   });
-  document.getElementById("MainContainer").addEventListener("click", function () {
-    rightButtons.style.display = "none";
-  });
+  windowResize();
+  window.addEventListener("resize", windowResize);
 };
+
+function windowResize() {
+  if (window.innerWidth <= 600) {
+    document
+      .getElementById("MainContainer")
+      .addEventListener("click", function () {
+        rightButtons.style.display = "none";
+      });
+  }
+}
 
 function setupGallery(gallery, images, comments) {
   var currentImage = 0;

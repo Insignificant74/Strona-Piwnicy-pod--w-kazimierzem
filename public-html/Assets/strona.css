@@ -30,6 +30,11 @@ hr {
   margin: 4px;
 }
 
+.banner {
+  background-image: "wejscie.png";
+  background-size: auto;
+}
+
 .box {
   display: flex;
 }
@@ -177,10 +182,10 @@ a {
   text-shadow: none;
   padding: 2px 0;
   height: auto;
-  position: relative;
+  position: fixed;
   left: 0;
   top: 0;
-  width: auto;
+  width: 100%;
   padding: 4px;
   margin: 0;
 }
