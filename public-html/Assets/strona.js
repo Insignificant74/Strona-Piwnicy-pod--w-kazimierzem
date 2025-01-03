@@ -31,14 +31,15 @@ window.onload = function () {
 
 function setupGallery(gallery, images, comments) {
   var currentImage = 0;
-  gallery.style.backgroundImage = "url(" + images[0] + ")";
+  var img = gallery.querySelector(".galleryImage");
+  img.src = images[0];
   gallery.nextSibling.textContent = comments[0];
   const rightButton = gallery.querySelector(".buttonRight");
   const leftButton = gallery.querySelector(".buttonLeft");
   rightButton.addEventListener("click", function () {
     if (currentImage < images.length - 1) {
       currentImage++;
-      gallery.style.backgroundImage = "url(" + images[currentImage] + ")";
+      img.src = images[currentImage];
       gallery.nextSibling.textContent = comments[currentImage];
       leftButton.style.display = "block";
       if (currentImage == images.length - 1) {
