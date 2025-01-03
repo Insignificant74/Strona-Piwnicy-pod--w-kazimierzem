@@ -44,6 +44,8 @@ function setupGallery(gallery, images, comments) {
   gallery.nextSibling.textContent = comments[0];
   const rightButton = gallery.querySelector(".buttonRight");
   const leftButton = gallery.querySelector(".buttonLeft");
+  gallery.style.height = img.height + "px";
+
   rightButton.addEventListener("click", function () {
     if (currentImage < images.length - 1) {
       currentImage++;
@@ -53,18 +55,20 @@ function setupGallery(gallery, images, comments) {
       if (currentImage == images.length - 1) {
         rightButton.style.display = "none";
       }
+      gallery.style.height = img.height + "px";
     }
   });
 
   leftButton.addEventListener("click", function () {
     if (currentImage != 0) {
       currentImage--;
-      gallery.style.backgroundImage = "url(" + images[currentImage] + ")";
+      img.src = images[currentImage];
       gallery.nextSibling.textContent = comments[currentImage];
       rightButton.style.display = "block";
       if (currentImage == 0) {
         leftButton.style.display = "none";
       }
+      gallery.style.height = img.height + "px";
     }
   });
 }

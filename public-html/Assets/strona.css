@@ -58,19 +58,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .gallery .buttonRight {
   margin-left: auto;
-  width: 6vh !important;
+  width: 6vh;
   cursor: pointer;
-  height: 60vh !important;
+  height: 60vh;
   position:relative;
+  z-index: 1; 
 }
 
 .gallery .buttonLeft {
   margin-right: auto;
-  width: 6vh !important;
+  width: 6vh;
   cursor: pointer;
   display: none;
-  height: 60vh !important;
+  height: 60vh;
   position:relative;
+  z-index: 1;
 }
 
 body {
@@ -174,6 +176,7 @@ a {
 }
 
 #Topbar {
+  order: 5000;
   text-align: left;
   font-family: "Logo";
   background-color: #7b1b20;
@@ -188,6 +191,7 @@ a {
   width: 100%;
   padding: 4px;
   margin: 0;
+  z-index: 9;
 }
 
 #rightButtons,
@@ -270,8 +274,32 @@ a {
   #MainContainer img {
     height: 250px;
   }
+
   .gallery {
     height: auto;
+    position: relative;
+  }
+
+  .galleryImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto !important;
+  }
+
+  .buttonLeft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto !important;
+  }
+
+  .buttonRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto !important;
   }
 
   .WinemenuImg {
