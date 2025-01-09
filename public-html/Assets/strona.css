@@ -22,8 +22,7 @@
 }
 
 .galleryImage {
-  height: 100% !important;
-  width: 100% !important;
+  height: 100%;
 }
 
 hr {
@@ -59,8 +58,8 @@ h1, h2, h3, h4, h5, h6 {
 .gallery .buttonRight {
   margin-left: auto;
   width: 6vh;
+  height: auto;
   cursor: pointer;
-  height: 60vh;
   position:relative;
   z-index: 1; 
 }
@@ -68,9 +67,9 @@ h1, h2, h3, h4, h5, h6 {
 .gallery .buttonLeft {
   margin-right: auto;
   width: 6vh;
+  height: auto;
   cursor: pointer;
   display: none;
-  height: 60vh;
   position:relative;
   z-index: 1;
 }
@@ -84,8 +83,9 @@ body {
   text-align: center;
 }
 
-body img {
+body img, body source {
   width: 100%;
+  display: block;
 }
 
 #MainContainer div {
@@ -239,7 +239,6 @@ a {
 }
 
 #MainContainer img {
-  height: 350px;
   object-fit: contain;
 }
 
@@ -264,6 +263,10 @@ a {
   padding: 50px;
   font-size: small;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-img, .tablet-img {
+  display: none;
 }
 
 @media (max-width: 900px) {
@@ -305,6 +308,14 @@ a {
   .WinemenuImg {
     width: 80%;
   }
+
+  .tablet-img {
+    display: block;
+  }
+
+  .PC-img{
+    display: none;
+  }
 }
 
 @media (max-width: 600px) {
@@ -333,5 +344,13 @@ a {
 
   .WinemenuImg {
     width: 100%;
+  }
+
+  .tablet-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: block;
   }
 }
