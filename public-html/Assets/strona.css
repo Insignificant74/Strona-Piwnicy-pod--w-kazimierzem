@@ -38,9 +38,23 @@ hr {
   display: flex;
 }
 
-h1, h2, h3, h4, h5, h6 {
+#MainContainer > h1,
+#MainContainer > h2,
+#MainContainer > h3,
+#MainContainer > h4,
+#MainContainer > h5,
+#MainContainer > h6 {
   font-family: "Main";
   margin-top: 10vh;
+}
+
+#MainContainer h1,
+#MainContainer h2,
+#MainContainer h3,
+#MainContainer h4,
+#MainContainer h5,
+#MainContainer h6 {
+  font-family: "Main";
 }
 
 .gallery {
@@ -60,8 +74,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 6vh;
   height: auto;
   cursor: pointer;
-  position:relative;
-  z-index: 1; 
+  position: relative;
+  z-index: 1;
 }
 
 .gallery .buttonLeft {
@@ -70,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   cursor: pointer;
   display: none;
-  position:relative;
+  position: relative;
   z-index: 1;
 }
 
@@ -81,9 +95,11 @@ body {
   color: #7b1b20;
   font-size: 2.5vh;
   text-align: center;
+  padding-top: 80px;
 }
 
-body img, body source {
+body img,
+body source {
   width: 100%;
   display: block;
 }
@@ -104,18 +120,26 @@ div.button:hover {
 
 a.bareLink:link {
   text-decoration: none;
+  width: fit-content;
+  margin: 7vh auto 0;
 }
 
 a.bareLink:visited {
   text-decoration: none;
+  width: fit-content;
+  margin: 7vh auto 0;
 }
 
 a.bareLink:hover {
   text-decoration: none;
+  width: fit-content;
+  margin: 7vh auto 0;
 }
 
 a.bareLink:active {
   text-decoration: none;
+  width: fit-content;
+  margin: 7vh auto 0;
 }
 
 a:link {
@@ -160,6 +184,11 @@ img.ikona {
   height: 22px !important;
   width: auto;
   margin: 10px;
+}
+
+img.banner {
+  height: 14vh !important;
+  width: auto;
 }
 
 a {
@@ -246,7 +275,6 @@ a {
   text-align: center;
 }
 
-
 .FoodmenuImg {
   width: 100%;
   height: auto !important;
@@ -265,7 +293,8 @@ a {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.mobile-img, .tablet-img {
+.mobile-img,
+.tablet-img {
   display: none;
 }
 
@@ -313,7 +342,7 @@ a {
     display: block;
   }
 
-  .PC-img{
+  .PC-img {
     display: none;
   }
 }
