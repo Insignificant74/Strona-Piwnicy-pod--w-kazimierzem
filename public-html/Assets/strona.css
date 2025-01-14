@@ -38,6 +38,11 @@ hr {
   display: flex;
 }
 
+.triple{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
 #MainContainer > h1,
 #MainContainer > h2,
 #MainContainer > h3,
@@ -345,6 +350,16 @@ a {
   .PC-img {
     display: none;
   }
+
+  .triple{
+    display: block;
+    font-size: smaller;
+  }
+
+.triple img {
+  height: 8vh !important;
+  column-gap: 2vh;
+}
 }
 
 @media (max-width: 600px) {
