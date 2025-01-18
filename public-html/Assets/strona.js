@@ -4,6 +4,8 @@ window.onload = function () {
   const mainButton = document.getElementById("mainButton");
   const foodButton = document.getElementById("foodButton");
   const contactButton = document.getElementById("contactButton");
+  const PSKButton = document.getElementById("PSKButton");
+  const TKPButton = document.getElementById("TKPButton");
   const rightButtons = document.getElementById("rightButtons");
   const hamburger = document.getElementById("hamburger");
 
@@ -15,6 +17,12 @@ window.onload = function () {
   });
   contactButton.addEventListener("click", function () {
     window.location.href = "..\\Kontakt";
+  });
+  PSKButton.addEventListener("click", function () {
+    window.location.href = "..\\PSK";
+  });
+  TKPButton.addEventListener("click", function () {
+    window.location.href = "..\\TKP";
   });
   hamburger.addEventListener("click", function () {
     if (rightButtons.style.display != "flex") {
