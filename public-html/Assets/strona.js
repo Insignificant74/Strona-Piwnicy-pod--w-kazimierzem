@@ -6,6 +6,10 @@ window.onload = function () {
   const contactButton = document.getElementById("contactButton");
   const PSKButton = document.getElementById("PSKButton");
   const TKPButton = document.getElementById("TKPButton");
+  //const Facebook = document.getElementById("Facebook");
+  //const Instagram = document.getElementById("Instagram");
+  //const Tripadvisor = document.getElementById("Tripadvisor");
+  //const GoogleRating = document.getElementById("GoogleRating");
   const rightButtons = document.getElementById("rightButtons");
   const hamburger = document.getElementById("hamburger");
 
@@ -24,6 +28,20 @@ window.onload = function () {
   TKPButton.addEventListener("click", function () {
     window.location.href = "..\\TKP";
   });
+  /*
+  Facebook.addEventListener("click", function () {
+    window.location.href = "..\\TKP";
+  });
+  Instagram.addEventListener("click", function () {
+    window.location.href = "..\\TKP";
+  });
+  Tripadvisor.addEventListener("click", function () {
+    window.location.href = "..\\TKP";
+  });
+  GoogleRating.addEventListener("click", function () {
+    window.location.href = "..\\TKP";
+  });
+  */
   hamburger.addEventListener("click", function () {
     if (rightButtons.style.display != "flex") {
       rightButtons.style.display = "flex";
