@@ -27,23 +27,21 @@ window.addEventListener("load", function () {
     "herbata.png",
     "kawa_1.png",
     "kawa_2.png",
-    "kawa_3.png",
     "kawa_4.png",
     "wina_1.png",
     "wina_2.png",
   ];
   const commentBar = [
-    "Bar",
-    "Pornstart Martini",
-    "Sex on the Beach",
-    "Grzaniec",
-    "Herbata Zimowa",
-    "kawa",
-    "kawa 2",
-    "kawa 3",
-    "kawa 4",
-    "wina",
-    "wina 2",
+    "Nasz bar jest dobrze wyposażony, oferuje wiele możliwości. To miejsce, gdzie szeroki wybór alkoholi, kreatywne koktajle oraz różnorodne atrakcje tworzą wyjątkową atmosferę dla każdego gościa.",
+    "Pornstar Martini - elegancki koktajl na bazie wódki i likieru marakujowego, zawierający prawdziwą marakuje i wanilie, podawany z kieliszkiem prosecco na boku, który dodaje mu wyjątkowego charakteru i nuty bąbelkowej świeżości.",
+    "Sex on the Beach -  klasyczny, owocowy koktajl na bazie triple sec, likieru brzoskwiniowego, soku pomarańczowego i żurawinowego, który zachwyca słodko-kwaśnym smakiem i tropikalnym charakterem.",
+    "Grzaniec z czerwonego wina - wzbogacony aromatycznymi przyprawami, takimi jak cynamon, goździki i pomarańcza, to jeden z naszych najbardziej lubianych napojów, który idealnie rozgrzewa i zachwyca swoim korzennym smakiem.",
+    "Herbata Zimowa - podawana z aromatycznym sokiem malinowym, miodem i czasami autorskimi przyprawami na boku, to zdecydowanie nasz najczęściej wybierany napój, który urzeka swoim rozgrzewającym i domowym smakiem.",
+    "Świeżo mielona kawa, przygotowywana z najwyższej jakości ziaren, zachwyca intensywnym aromatem i głębokim smakiem, stanowiąc idealny początek każdego dnia.",
+    "Profesjonalnie spienione mleko, o kremowej konsystencji i delikatnej, aksamitnej piance, doskonale dopełnia każdą kawę, podkreślając jej wyjątkowy smak.",
+    "Nasza pasja do kawy przejawia się w dążeniu do perfekcji w każdym etapie jej przygotowania – od starannego wyboru ziaren po serwowanie napoju, który zachwyca smakiem i aromatem.",
+    "Nasz asortyment win to starannie wyselekcjonowane butelki, które łączą wyjątkowe smaki z różnorodnych regionów, zapewniając doskonały wybór dla każdego miłośnika wina.",
+    "Nasz duży wybór obejmuje zarówno regionalne wina z Winnicy Zamojskiej i Winiarni Zamojskiej, jak i doskonałe wino domowe, które zachwyca swoim unikalnym charakterem i bogactwem smaku.",
   ];
   const galleryPomieszczenia = document.getElementById("galleryPomieszczenia");
   const imagesPomieszczenia = [
