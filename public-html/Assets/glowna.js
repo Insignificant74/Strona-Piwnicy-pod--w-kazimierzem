@@ -64,19 +64,31 @@ window.addEventListener("load", function () {
     "Ponowne luknięcie na salę kolorową",
     "Dodatkowa perspektywa ogródka zimowego",
   ];
-  /*
   const galleryOferty = document.getElementById("galleryOferty");
-  const imagesOferty = [];
-  const commentOferty = [];
-  */
+  const imagesOferty = [
+    "grupa1.jpg",
+    "grupa2.jpg",
+    "grupa3.jpg",
+    "grupa4.jpg",
+    "grupa5.jpg",
+    "grupa6.jpg"
+  ];
+  const commentOferty = [
+    "Restauracja oferuje możliwość zorganizowania wyżywienia dla grup zorganizowanych do 50 osób.",
+    "W naszym menu znajdą Państwo dania kuchni polskiej, europejskiej i regionalnej.",
+    "W celu skorzystania z naszej oferty dla grup prosimy o kontakt telefoniczny lub mailowy.",
+    "Oferujemy też pojemniki na wynos żeby nic się nie zmarnowała i żeby nie było obaw przed zamawianiem ekscesywnie.",
+    "Mniejsze grupy również zachęcamy do składania rezerwacji poprzez telefon lub email.",
+    "Jesteśmy przygotowani na każdą imprezę od małych urodzin do firmowych świąt."
+  ];
 
   setupGallery(galleryBar, imagesBar, commentBar);
   setupGallery(galleryKuchnia, imagesKuchnia, commentKuchnia);
   setupGallery(galleryPomieszczenia, imagesPomieszczenia, commentPomieszczenia);
-  //setupGallery(galleryOferty, imagesOferty, commentOferty);
+  setupGallery(galleryOferty, imagesOferty, commentOferty);
 
   preloadImages(imagesBar);
   preloadImages(imagesKuchnia);
   preloadImages(imagesPomieszczenia);
-  //preloadImages(imagesOferty);
+  preloadImages(imagesOferty);
 });
